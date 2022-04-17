@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json())
 
-app.post('/bhfl', (req, res) => {
+app.post('/bfhl', (req, res) => {
 
     let resp = {
         "user_id": "john_doe_17091999",
@@ -41,4 +41,4 @@ app.post('/bhfl', (req, res) => {
 
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
